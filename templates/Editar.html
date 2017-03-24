@@ -1,0 +1,57 @@
+$def with (producto)
+
+
+	<form color:green class="form-horizontal" action="" method="POST">
+	  <fieldset>
+	    <label/>Edicion de Producto</label>
+
+	    <input type="hidden" class="form-control" id="producto" required name="id_producto" value=$producto.id_producto style="width:70px;height:30px;font-size:12pt;font-family:Helvetica;font-weight:bold; 
+       color:green;border-width:thin>
+
+	    <div class="form-group">
+	      <label for="producto" class="col-lg-2 control-label">Campos a editar</label>
+	      <div class="col-lg-10">
+	        <input type="text" class="form-control" id="producto" required name="producto" value=$producto.producto style="width:70px;height:30px;font-size:12pt;font-family:Helvetica;font-weight:bold; 
+            color:green;border-width:thin>
+	      </div>
+	    </div>
+
+	    <div class="form-group">
+	      <label for="Descripción" class="col-lg-2 control-label">Descripción</label>
+	      <div class="col-lg-10">
+	        <textarea class="form-control" rows="3" id="Descripción" required name="description" values=$producto.description style="width:70px;height:30px;font-size:12pt;font-family:Helvetica;font-weight:bold; 
+            color:green;border-width:thin </textarea>
+	      </div>
+	    </div>
+
+	    <div class="form-group">
+	      <label for="existencias" class="col-lg-2 control-label">Existencias</label>
+	      <div class="col-lg-10">
+	        <input type="text" class="form-control" id="existencias" required name="stock" value=$producto.exitencias style="width:70px;height:30px;font-size:12pt;font-family:Helvetica;font-weight:bold; 
+            color:green;border-width:thin>
+	      </div>
+	    </div>
+
+	    <div class="form-group">
+	      <label for="precio_compra" class="col-lg-2 control-label">Precio compra</label>
+	      <div class="col-lg-10">
+	        <input type="text" class="form-control" id="precio_compra" required name="precio_compra" value=$producto.precio_comprastyle="width:70px;height:30px;font-size:12pt;font-family:Helvetica;font-weight:bold; 
+             color:green;border-width:thin>
+	      </div>
+	    </div>
+
+	    <div class="form-group">
+	      <label for="precio_venta" class="col-lg-2 control-label">Precio venta</label>
+	      <div class="col-lg-10">
+	        <input type="text" class="form-control" id="precio_venta" required name="precio_venta" value=$producto.precion_venta style="width:70px;height:30px;font-size:12pt;font-family:Helvetica;font-weight:bold; 
+            color:green;border-width:thin>
+	      </div>
+	    </div>
+
+	    <div class="form-group">
+	      <div class="col-lg-10 col-lg-offset-2">
+	      	<button style="color: #FF0000" type="submit" class="btn btn-info">Guardar Cambios</button>
+	      </div>
+	    </div>
+	  </fieldset>
+	</form>

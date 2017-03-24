@@ -1,0 +1,13 @@
+use acme_store;
+
+
+CREATE TABLE IF NOT EXISTS `productos` (
+  `id_producto` mediumint(8) NOT NULL AUTO_INCREMENT,
+  `producto` varchar(34) NOT NULL,
+  `existencias` int(34) NOT NULL,
+  `descripcion` varchar(34) NOT NULL,
+  `precio_compra` int(34) NOT NULL,
+  `precio_venta` int(34) NOT NULL,
+  `imagen_producto` int(34) NOT NULL,
+  PRIMARY KEY (`id_producto`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
